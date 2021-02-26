@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fa" dir="">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<meta name='author' content='Mostafa Asadi'>
+	<meta name="twitter:card" content="summary">
+	<meta property="og:type" content="website" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>نگاه</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/materialize-rtl.min.css') }}">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</head>
+
+<body dir="">
+	<nav class="nav">
+		<div class="nav-wrapper white">
+			<div class="container">
+				<a href="/" class="brand-logo pf center black-text">
+					<i class="large material-icons">remove_red_eye</i>
+				</a>
+			</div>
+
+		</div>
+	</nav>
+	<main>
+		<section>
+			<div class="row" style="padding-top: 200px;">
+				<div class="container">
+					<form action="/result" method="POST" class="col s4 push-s4 form-check-inline">
+						<div class="row">
+							<div class="input-field col s12">
+								<i class="material-icons prefix">link</i>
+								<input id="linkt" name="linkt" type="text">
+								<label for="linkt">Link</label>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col s12 inline input-field">
+								<button class="btn waves-effect btn-large waves-light blue" type="submit" name="action">
+									ScreenIt
+									<i class="material-icons right">image</i>
+								</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</section>
+	</main>
+	<script type="text/javascript">
+		M.AutoInit();
+	</script>
+</body>
+
+</html>

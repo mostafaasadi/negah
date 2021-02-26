@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fa" dir="">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<meta name='author' content='Mostafa Asadi'>
+	<meta name="twitter:card" content="summary">
+	<meta property="og:type" content="website" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>نگاه</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/materialize-rtl.min.css') }}">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</head>
+
+<body dir="">
+	<nav class="nav">
+		<div class="nav-wrapper white">
+			<div class="container">
+				<a href="/" class="brand-logo pf center black-text">
+					<i class="large material-icons">remove_red_eye</i>
+				</a>
+			</div>
+
+		</div>
+	</nav>
+	<main>
+		<section>
+			<div class="row" style="padding-top: 100px;">
+				<div class="container center">
+					<div class="col s10">
+						<img class="materialboxed center" width=1100 src="{{ url_for('static', filename=scu['desktop']) }}" alt="">
+					</div>
+					<div class="col s2">
+						<i class="large material-icons">desktop_windows</i>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="container center">
+					<div class="col s4">
+						<i class="large material-icons">tablet_android</i>
+					</div>
+					<div class="col s6">
+						<img class="materialboxed center" width=960 src="{{ url_for('static', filename=scu['tablet']) }}" alt="">
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="container center">
+					<div class="col s6">
+						<img class="materialboxed center" width=480 src="{{ url_for('static', filename=scu['mobile']) }}" alt="">
+					</div>
+					<div class="col s6">
+						<i class="large material-icons">phone_android</i>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	<script type="text/javascript">
+		M.AutoInit();
+	</script>
+</body>
+
+</html>
